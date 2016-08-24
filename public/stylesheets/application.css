@@ -1,0 +1,77 @@
+body{
+  background-color: #eceff1;
+}
+
+nav.big-nav{
+  height: 100px;
+  background-color: #37474f;
+}
+
+.navbar-fixed{
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.push-down{
+  margin-top: 60px;
+}
+
+.push-down-30{
+  margin-top: 30px;
+}
+
+.tabs .tab a{
+  color: #01579b;
+}
+
+.tabs .tab a:hover{
+  color: #0091ea;
+}
+
+.tabs .indicator{
+  background-color: #039be5;
+}
+
+.card-panel{
+  -webkit-transition: height 10s linear;
+  transition: height 2s linear;
+}
+
+.row-padding{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.info-divider{
+  margin: 20px 0;
+  height: 1px;
+  background: rgba(0,0,0,0.1);
+  background: gradient(linear, 0 0, 100% 0, from(transparent), to(transparent), color-stop(50%, rgba(0,0,0,0.1)));
+}
+
+.hidden{
+  display: none;
+}
+
+.form-box-back{
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.form-box{
+  position: fixed;
+  width: 50%;
+  bottom: 10px;
+  left: 25%;
+  z-index: 1001;
+}
+
+.float-bottom-right {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
