@@ -25,6 +25,8 @@ get '/api/contacts/edit/:id' do
 end
 
 post '/api/contacts/update' do
+  params[:first_name] = params[:first_name].capitalize
+  params[:last_name] = params[:last_name].capitalize
   @contact = Contact.find(params[:id])
   if @contact.update(params)
     @contact.to_json

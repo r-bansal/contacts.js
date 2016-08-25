@@ -3,13 +3,14 @@ $(document).ready(function() {
   var updateList = function(){
     $.getJSON('/api/contacts', function(data){
       $('#contacts').empty();
+
       $.each(data, function(index, obj){
         var contact = "<div class=\"row\">\n" +
                       "\t<div class=\"col s8 offset-s2 m6 offset-m3\">\n" +
-                      "\t\t<div id=\"" + obj.id +"\" class=\"card-panel\">\n" +
+                      "\t\t<div data-contact=\"" + obj.id +"\" class=\"card-panel\">\n" +
                       "\t\t\t<h5>" + obj.first_name + " " + obj.last_name +
-                      "<span class=\"right\"><a href='#' class='edit grey-text' id='" + obj.id + "'><i class='material-icons'>edit</i></a>" +
-                      "<a href='#' class='delete grey-text' id='" + obj.id + "'><i class=\"material-icons\">delete</i></a></span></h5>\n" +
+                      "<span class=\"right\"><a href='#' class='edit grey-text' data-contact='" + obj.id + "'><i class='material-icons'>edit</i></a>" +
+                      "<a href='#' class='delete grey-text' data-contact='" + obj.id + "'><i class=\"material-icons\">delete</i></a></span></h5>\n" +
 
                       "\t\t\t<h6>" + obj.email + "</h6>\n" +
                       "\t\t\t<div class=\"info-divider\"></div>\n";
